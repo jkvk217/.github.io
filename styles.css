@@ -128,8 +128,14 @@ ul.roles {
   padding-left: 32px;   /* ⬅ pushes bullets right */
 }
 ul.roles {
-  list-style-type: circle;
+  list-style: none;
 }
+
+ul.roles li::before {
+  content: "–";
+  margin-right: 6px;
+}
+
 
 
 ul.roles li {
