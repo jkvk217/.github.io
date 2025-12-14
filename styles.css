@@ -141,3 +141,8 @@ body {
 .divider {
   opacity: 0.6;
 }
+.summary {
+  max-width: 650px;   /* resume-friendly line length */
+  margin: 1rem auto;  /* centers it */
+  line-height: 1.5;
+}
