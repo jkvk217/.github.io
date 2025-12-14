@@ -268,3 +268,7 @@ section {
     margin: 10px 0;
   }
 }
+.section-heading {
+  font-style: italic;
+  font-weight: 600;
+}
