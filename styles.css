@@ -144,3 +144,68 @@ body {
 .achievements li {
   padding-left: 0.25rem;   /* aligns text after bullet */
 }
+/* =========================
+   Print-optimized resume
+   ========================= */
+@media print {
+a[href^="https://www.linkedin.com"]:after {
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+}
+
+  /* Page setup */
+  @page {
+    margin: 0.75in;
+  }
+
+  body {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+
+  /* Prevent awkward page breaks */
+  p, ul, li {
+    page-break-inside: avoid;
+  }
+
+  ul {
+    margin-bottom: 0.6em;
+  }
+
+  /* Contact links should look like text */
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  /* Hide non-print elements */
+  .pdf-button-wrapper {
+    display: none !important;
+  }
+
+  /* Tighten spacing slightly for 1-page fit */
+  .job-title {
+    margin-top: 10px;
+  }
+
+  .job-meta {
+    margin-bottom: 4px;
+  }
+
+  /* HR lines print clean */
+  hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+  }
+}
