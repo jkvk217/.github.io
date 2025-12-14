@@ -146,6 +146,10 @@ h3.job-title {
   font-weight: normal;
   font-size: 11pt;
 }
+.red-heading {
+  color: #c00000 !important;
+  font-weight: 700;
+}
 
 /* =========================
    Download button
