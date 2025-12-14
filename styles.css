@@ -132,3 +132,12 @@ body {
 .download-btn:active {
   transform: translateY(0);
 }
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* controls spacing everywhere */
+}
+
+.divider {
+  opacity: 0.6;
+}
