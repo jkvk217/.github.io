@@ -102,12 +102,13 @@ section {
    ========================= */
 
 /* Job titles (shared with Education levels) */
-h3.job-title {
+h3.job-title,
+.education-title {
   color: #c00000;
   font-size: 12pt;
   font-weight: 700;
   line-height: 1.1;
-  margin: 10px 0 0 0;
+  margin: 0 0 2px 0;
 }
 
 .job-meta {
