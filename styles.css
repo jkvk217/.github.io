@@ -1,0 +1,134 @@
+body {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+h1, h2 {
+  margin-bottom: 0.4em;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+@media print {
+  body {
+    margin: 0;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+.job-title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #c00000; /* red */
+  margin-bottom: 2px;
+}
+
+.job-meta {
+  font-size: 11pt;
+  font-weight: bold;
+  color: #000; /* black */
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.print-btn {
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  font-size: 11pt;
+  cursor: pointer;
+}
+}
+/* Education headings (High School / Trade School) */
+h3 {
+  color: #c00000;        /* red */
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* School name, location, dates */
+h3 .company,
+h3 .meta {
+  color: #000;           /* black */
+  font-weight: normal;
+  font-size: 11pt;
+}
+.contact-line {
+  text-align: center;
+  font-size: 11pt;
+  margin: 6px 0 14px 0;
+}
+
+.contact-line a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+.contact-line .divider {
+  margin: 0 6px;
+}
+.education-line {
+  margin: 10 0 10px 0;
+}
+
+.edu-level {
+  color: #c00000;
+  font-weight: bold;
+  font-size: 12pt;   /* RED text */
+}
+
+.edu-detail {
+  color: #000;
+  font-weight: normal;
+  font-size: 11pt;
+}
+
+.edu-meta {
+  color: #000;
+  font-weight: normal;
+  font-size: 11pt;
+}
+body {
+  background-color: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Resume PDF download button */
+.pdf-button-wrapper {
+  text-align: center;
+  margin: 28px 0 12px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  font-family: Bahnschrift, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #8b0000;              /* dark red text */
+  background-color: #d1d5db;   /* medium gray */
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #9ca3af;   /* subtle edge */
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              transform 0.1s ease;
+}
+
+.download-btn:hover {
+  background-color: #e5e7eb;   /* lighter gray */
+  color: #b91c1c;              /* brighter red */
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
