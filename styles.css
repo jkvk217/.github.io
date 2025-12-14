@@ -209,3 +209,10 @@ a[href^="https://www.linkedin.com"]:after {
     margin: 10px 0;
   }
 }
+.summary {
+  max-width: 650px;
+  margin: 12px auto;
+  text-align: center;
+  font-size: 12pt;
+  line-height: 1.5;
+}
