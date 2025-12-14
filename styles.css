@@ -78,9 +78,9 @@ h3 .meta {
 }
 
 .edu-level {
-  color: #c00000;
+  color: #c00000;   /* match job-title dark red */
   font-weight: bold;
-  font-size: 12pt;   /* RED text */
+  font-size: 12pt;
 }
 
 .edu-detail {
