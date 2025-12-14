@@ -273,11 +273,23 @@ ul.achievements {
 .job-meta .details,
 .job-meta .via {
   font-weight: 400;
-}
-@media (max-width: 600px), print {
+
+   /* Mobile layout */
+@media (max-width: 600px) {
   .education-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Print-only rules */
+@media print {
+  h1,
+  h2,
+  h3 {
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+}
 
  .education-divider {
   width: 1px;
