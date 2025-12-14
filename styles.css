@@ -164,10 +164,9 @@ h3.job-title {
 .education-divider {
   width: 1px;
   background-color: #999;
-   padding-left: 5px; 
 }
 .education-item.high-school {
-  padding-left: 25px;   /* 👈 adjust this number */
+  padding-left: 30px;   /* 👈 adjust this number */
 }
 
 /* =========================
