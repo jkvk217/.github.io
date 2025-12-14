@@ -368,13 +368,34 @@ ul.achievements li {
   line-height: 1.25;
 }
 
-/* Kill extra space between the two lists */
-ul.roles {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+/* ===== NUCLEAR FIX: Word list spacing ===== */
+
+/* Completely reset list spacing for role bullets */
+ul.roles,
+ul.roles li {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
+/* Re-apply controlled indentation */
+ul.roles {
+  margin-left: 1.75rem !important;
+  list-style: none;
+}
+
+/* Tight spacing between role lines */
+ul.roles li {
+  padding-left: 0;
+  line-height: 1.2;
+}
+
+/* Add dash bullets manually */
+ul.roles li::before {
+  content: "– ";
+  margin-right: 2px;
+}
+
+/* Tighten gap between roles list and achievements list */
 ul.roles + ul.achievements {
   margin-top: 2px !important;
-  padding-top: 0 !important;
 }
