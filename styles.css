@@ -229,7 +229,7 @@ a[href^="https://www.linkedin.com"]:after {
   text-align: center;
 }
 .section-heading {
-  font-size: 13pt;        /* resume-appropriate */
+  font-size: 13pt;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
