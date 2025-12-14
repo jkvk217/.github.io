@@ -106,11 +106,18 @@ section {
 
 .job-meta {
   font-size: 11pt;
-  font-weight: bold;
-  color: #000;
-  margin-top: 0;        /* 🔽 critical */
-  margin-bottom: 6px;  /* tighter list spacing */
+  margin-top: 0;
+  margin-bottom: 4px; /* tighter spacing */
 }
+
+.job-meta .company {
+  font-weight: 700; /* bold */
+}
+
+.job-meta .details {
+  font-weight: 400; /* normal */
+}
+
 
 
 .roles {
