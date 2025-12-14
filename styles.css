@@ -1,26 +1,36 @@
 /* =========================
-   Base layout (SCREEN)
+   RESET / BASE
    ========================= */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 40px 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background-color: #f3f4f6; /* light gray page background */
+  background-color: #f3f4f6;
   color: #000;
 }
 
-/* Resume card */
+/* =========================
+   RESUME CARD (SCREEN)
+   ========================= */
+
 .WordSection1 {
+  max-width: 850px;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 32px;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  max-width: 850px;
-  margin: 0 auto;
 }
 
-/* Name */
+/* =========================
+   NAME / HEADER
+   ========================= */
+
 .name {
   text-align: center;
   font-size: 18pt;
@@ -28,54 +38,6 @@ body {
   margin: 0 0 6px 0;
   letter-spacing: 1.5px;
 }
-
-/* Job titles (SCREEN) */
-h3.job-title {
-  color: #c00000;
-  font-size: 12pt;
-  font-weight: bold;
-}
-
-
-/* Resume page */
-.WordSection1 {
-  max-width: 850px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   Headings & sections
-   ========================= */
-
-h1, h2 {
-  margin-bottom: 0.4em;
-}
-
-.section-heading {
-  font-size: 12.5pt;          /* smaller, recruiter-friendly */
-  font-weight: 700;
-  letter-spacing: 0.5px;      /* tighter than before */
-  text-transform: uppercase;
-  margin: 16px 0 6px;         /* less vertical space */
-  color: #000;
-}
-
-.section-divider {
-  border-bottom: 1px solid #000;
-  margin: 18px 0 8px;
-}
-
-section {
-  margin-bottom: 1.5em;
-}
-
-/* =========================
-   Contact line
-   ========================= */
 
 .contact-line {
   display: flex;
@@ -97,7 +59,30 @@ section {
 }
 
 /* =========================
-   Summary
+   SECTION HEADINGS
+   ========================= */
+
+.section-heading {
+  font-size: 12.5pt;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 16px 0 6px;
+  color: #000;
+}
+
+.section-divider {
+  border-bottom: 1px solid #000;
+  margin: 10px 0 12px;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+/* =========================
+   SUMMARY
    ========================= */
 
 .summary {
@@ -113,45 +98,46 @@ section {
 }
 
 /* =========================
-   Work Experience
+   WORK EXPERIENCE
    ========================= */
-/* Job titles */
-h3.job-title {
+
+/* Job titles (shared with Education levels) */
+h3.job-title,
+.edu-level {
+  color: #c00000;
   font-size: 12pt;
   font-weight: 700;
-  color: #c00000;          /* dark red */
-  margin-top: 10px !important;
-  margin-bottom: 0 !important;
-  line-height: 1.1 !important;
+  line-height: 1.1;
+  margin: 10px 0 0 0;
 }
 
 .job-meta {
   font-size: 11pt;
-  margin-top: 2px !important;
-  margin-bottom: 4px !important;
-  line-height: 1.25 !important;
+  margin: 2px 0 4px 0;
+  line-height: 1.25;
 }
 
-.job-meta + ul {
-  margin-top: 2px !important;
+.job-meta .company {
+  font-weight: 700;
 }
 
+.job-meta .details,
+.job-meta .via {
+  font-weight: 400;
+}
 
-.roles {
-  margin-left: 1.5rem;
-}
-/* Tighten role bullets (AutoZone section) */
-/* AutoZone role bullets — indented & styled */
-ul.roles {
-  margin-top: 4px;
-  margin-bottom: 6px;
-  padding-left: 32px;   /* ⬅ pushes bullets right */
-}
+/* Role list (dashed, indented, italic) */
+
 ul.roles {
   list-style: none;
+  padding-left: 32px;
+  margin: 4px 0 6px 0;
 }
+
 ul.roles li {
   font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 2px;
 }
 
 ul.roles li::before {
@@ -159,40 +145,25 @@ ul.roles li::before {
   margin-right: 6px;
 }
 
+/* Achievement bullets */
 
-
-ul.roles li {
-  margin-bottom: 2px !important;
-  line-height: 1.25 !important;
+ul.achievements {
+  margin: 4px 0 0 0;
 }
 
-
-.achievements {
-  margin-left: 0;
-}
-
-.roles li,
-.achievements li {
-  padding-left: 0.25rem;
-}
-/* Tighten space after role list */
-ul.roles {
+ul.achievements li {
+  line-height: 1.35;
   margin-bottom: 4px;
 }
 
-/* Tighten space before achievements list */
-ul.achievements {
-  margin-top: 4px;
-}
-
 /* =========================
-   Education (SCREEN)
+   EDUCATION
    ========================= */
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr; /* equal columns + divider */
-  column-gap: 24px;                   /* even spacing from divider */
+  grid-template-columns: 1fr 1px 1fr;
+  column-gap: 24px;
   align-items: start;
   margin-top: 12px;
 }
@@ -206,18 +177,12 @@ ul.achievements {
   line-height: 1.35;
 }
 
-/* Remove manual nudging */
-.education-item.high-school {
-  padding-left: 0;
-}
-
-
 /* =========================
-   Download button
+   DOWNLOAD BUTTON (SCREEN ONLY)
    ========================= */
 
 .pdf-button-wrapper {
-  text-align: center;
+  text-align: centerig;
   margin: 28px 0 12px;
 }
 
@@ -228,86 +193,22 @@ ul.achievements {
   font-family: Bahnschrift, Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
   color: #8b0000;
   background-color: #d1d5db;
   text-decoration: none;
   border-radius: 6px;
   border: 1px solid #9ca3af;
   cursor: pointer;
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              transform 0.1s ease;
 }
 
 .download-btn:hover {
   background-color: #e5e7eb;
   color: #b91c1c;
-  transform: translateY(-1px);
-}
-
-.download-btn:active {
-  transform: translateY(0);
-}
-
-.section-heading {
-  font-style: italic;
-  font-weight: 700;
-}
-.job-meta .company {
-  font-weight: 700;
-}
-
-.job-meta .details,
-.job-meta .via {
-  font-weight: 400;
-}
-   /* Mobile layout */
-@media (max-width: 600px) {
-  .education-grid {
-  display: grid !important;
-  grid-template-columns: 1fr 1px 1fr;
-  column-gap: 20px;
-}
-
-.education-divider {
-  display: block;
-}
-
-/* Print-only rules */
-@media print {
-  h1,
-  h2,
-  h3 {
-    color: #000 !important;
-    page-break-after: avoid;
-  }
-}
-
- .education-divider {
-  width: 1px;
-  background-color: #999;
-  margin: 0 18px;          /* space left & right of divider */
-  align-self: stretch;    /* full height of content */
-}
-
-
-/* Kill default UL spacing under job-meta */
-.job-meta + ul {
-  margin-top: 2px !important;
-}
-/* ===== Fix spacing between role list and achievement list ===== */
-
-/* Remove default spacing from list items */
-ul.roles li,
-ul.achievements li {
-  margin-top: 0 !important;
-  margin-bottom: 2px !important;
-  line-height: 1.25;
 }
 
 /* =========================
-   Mobile adjustments
+   MOBILE
    ========================= */
 
 @media (max-width: 600px) {
@@ -315,82 +216,17 @@ ul.achievements li {
     padding: 20px 12px;
   }
 
-  h1 {
-    font-size: 16pt;
-  }
-
-  .job-title {
-    font-size: 11.5pt;
-  }
-
-  .job-meta {
-    font-size: 10.5pt;
-  }
-
-  .summary {
-    font-size: 11pt;
-  }
-
-  ul {
-    padding-left: 18px;
-  }
-
-  li {
-    margin-bottom: 4px;
-  }
-}
-
-/* =========================
-   Print-optimized
-   ========================= */
-
-     /* Fix Education layout in print */
   .education-grid {
-    display: block !important;
+    grid-template-columns: 1fr;
   }
 
-  .education-item {
-    width: 100% !important;
-    margin-bottom: 10px;
-  }
-
-  /* Keep colors correct */
-  /* Education headings styled like job titles */
-.edu-level {
-  color: #c00000;        /* same red */
-  font-size: 12pt;       /* same size */
-  font-weight: 700;      /* same weight */
-  line-height: 1.1;
-}
-
-
-}
-  /* Ensure colors print correctly */
-  body {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  /* Section headings stay black */
-  h1,
-  h2 {
-    color: #000 !important;
-  }
-
-  /* Job titles print red */
-  h3.job-title {
-    color: #c00000 !important;
-    font-weight: bold;
+  .education-divider {
+    display: none;
   }
 }
-
-
-  @page {
-    margin: 0.75in;
-  }
 
 /* =========================
-   Print-only overrides
+   PRINT (LOCKED)
    ========================= */
 
 @media print {
@@ -399,7 +235,6 @@ ul.achievements li {
     background: #fff;
     padding: 0;
     margin: 0;
-    max-width: none;
     font-size: 11pt;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -417,9 +252,9 @@ ul.achievements li {
     page-break-after: avoid;
   }
 
-  h3.job-title {
+  h3.job-title,
+  .edu-level {
     color: #c00000 !important;
-    font-weight: bold;
   }
 
   p, ul, li {
@@ -433,42 +268,17 @@ ul.achievements li {
 
   .pdf-button-wrapper {
     display: none !important;
+  }
+
+  .education-grid {
+    display: block;
+  }
+
+  .education-item {
+    margin-bottom: 10px;
   }
 
   @page {
     margin: 0.75in;
   }
 }
-
-
-  h1, h2, h3 {
-    color: #000 !important;
-    page-break-after: avoid;
-  }
-
-  p, ul, li {
-    page-break-inside: avoid;
-  }
-
-  a {
-    color: #000 !important;
-    text-decoration: none;
-  }
-
-  a[href^="https://www.linkedin.com"]:after {
-    content: " (" attr(href) ")";
-    font-size: 10pt;
-  }
-
-  .pdf-button-wrapper {
-    display: none !important;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px solid #000;
-    margin: 10px 0;
-  }
-}
-
-
