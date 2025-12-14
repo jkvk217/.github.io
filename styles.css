@@ -273,7 +273,7 @@ ul.achievements {
 .job-meta .details,
 .job-meta .via {
   font-weight: 400;
-
+}
    /* Mobile layout */
 @media (max-width: 600px) {
   .education-grid {
@@ -350,15 +350,6 @@ ul.achievements li {
 /* =========================
    Print-optimized
    ========================= */
-
-@media print {
-   @media print {
-  .education-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-  }
-}
 
      /* Fix Education layout in print */
   .education-grid {
