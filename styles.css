@@ -1,64 +1,63 @@
+/* =========================
+   Base layout
+   ========================= */
+
 body {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 0 16px;
+  margin: 0;
+  padding: 40px 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: #f3f4f6; /* light gray page background */
+  color: #000;
 }
+
+/* Resume page */
+.WordSection1 {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   Headings & sections
+   ========================= */
+
 h1, h2 {
   margin-bottom: 0.4em;
+}
+
+.section-heading {
+  font-size: 13pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 18px 0 6px;
+  color: #000;
+}
+
+.section-divider {
+  border-bottom: 1px solid #000;
+  margin: 18px 0 8px;
 }
 
 section {
   margin-bottom: 1.5em;
 }
-@media print {
-  body {
-    margin: 0;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-}
-.job-title {
-  font-size: 12pt;
-  font-weight: bold;
-  color: #c00000; /* red */
-  margin-bottom: 2px;
-}
 
-.job-meta {
-  font-size: 11pt;
-  font-weight: bold;
-  color: #000; /* black */
-  margin-top: 0;
-  margin-bottom: 6px;
-}
-.print-btn {
-  margin-bottom: 12px;
-  padding: 6px 12px;
-  font-size: 11pt;
-  cursor: pointer;
-}
-}
-/* Education headings (High School / Trade School) */
-h3 {
-  color: #c00000;        /* red */
-  font-weight: bold;
-  margin-bottom: 4px;
-}
+/* =========================
+   Contact line
+   ========================= */
 
-/* School name, location, dates */
-h3 .company,
-h3 .meta {
-  color: #000;           /* black */
-  font-weight: normal;
-  font-size: 11pt;
-}
 .contact-line {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 10px;
   font-size: 11pt;
-  margin: 6px 0 14px 0;
+  margin: 6px 0 14px;
+  text-align: center;
 }
 
 .contact-line a {
@@ -70,70 +69,42 @@ h3 .meta {
   text-decoration: underline;
 }
 
-.contact-line .divider {
-  margin: 0 6px;
-}
-.education-line {
-  margin: 10 0 10px 0;
-}
+/* =========================
+   Summary
+   ========================= */
 
-.edu-level {
-  color: #c00000;   /* match job-title dark red */
-  font-weight: bold;
-  font-size: 12pt;
-}
-
-.edu-detail {
-  color: #000;
-  font-weight: normal;
-  font-size: 11pt;
-}
-
-.edu-meta {
-  color: #000;
-  font-weight: normal;
-  font-size: 11pt;
-}
-body {
-  background-color: #ffffff; /* Light mode background */
-  color: #000000; /* Light mode text color */
-  transition: background-color 0.3s, color 0.3s;
-}
-/* Resume PDF download button */
-.pdf-button-wrapper {
+.summary {
+  max-width: 650px;
+  margin: 12px auto;
   text-align: center;
-  margin: 28px 0 12px;
+  font-size: 12pt;
+  line-height: 1.5;
 }
 
-.download-btn {
-  display: inline-block;
-  padding: 12px 26px;
-  font-family: Bahnschrift, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #8b0000;              /* dark red text */
-  background-color: #d1d5db;   /* medium gray */
-  text-decoration: none;
-  border-radius: 6px;
-  border: 1px solid #9ca3af;   /* subtle edge */
-  cursor: pointer;
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              transform 0.1s ease;
+.summary em {
+  display: block;
 }
 
-.download-btn:hover {
-  background-color: #e5e7eb;   /* lighter gray */
-  color: #b91c1c;              /* brighter red */
-  transform: translateY(-1px);
+/* =========================
+   Work experience
+   ========================= */
+
+.job-title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #c00000; /* dark red */
+  margin-bottom: 2px;
 }
 
-.download-btn:active {
-  transform: translateY(0);
+.job-meta {
+  font-size: 11pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 6px;
 }
+
 .roles {
-  margin-left: 1.5rem;     /* pushes bullets right */
+  margin-left: 1.5rem;
 }
 
 .achievements {
@@ -142,116 +113,71 @@ body {
 
 .roles li,
 .achievements li {
-  padding-left: 0.25rem;   /* aligns text after bullet */
+  padding-left: 0.25rem;
 }
+
 /* =========================
-   Print-optimized resume
+   Education
    ========================= */
-@media print {
-a[href^="https://www.linkedin.com"]:after {
-  content: " (" attr(href) ")";
-  font-size: 10pt;
-}
 
-  /* Page setup */
-  @page {
-    margin: 0.75in;
-  }
-
-  body {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #000;
-    font-size: 11pt;
-  }
-
-  /* Headings */
-  h1, h2, h3 {
-    color: #000 !important;
-    page-break-after: avoid;
-  }
-
-  /* Prevent awkward page breaks */
-  p, ul, li {
-    page-break-inside: avoid;
-  }
-
-  ul {
-    margin-bottom: 0.6em;
-  }
-
-  /* Contact links should look like text */
-  a {
-    color: #000 !important;
-    text-decoration: none;
-  }
-
-  /* Hide non-print elements */
-  .pdf-button-wrapper {
-    display: none !important;
-  }
-
-  /* Tighten spacing slightly for 1-page fit */
-  .job-title {
-    margin-top: 10px;
-  }
-
-  .job-meta {
-    margin-bottom: 4px;
-  }
-
-  /* HR lines print clean */
-  hr {
-    border: none;
-    border-top: 1px solid #000;
-    margin: 10px 0;
-  }
-}
-.summary {
-  max-width: 650px;
-  margin: 12px auto;
-  text-align: center;
-  font-size: 12pt;
-  line-height: 1.5;
-}
-.summary em {
-  display: block;
-}
-.WordSection1 {
-  margin: 0 auto;
-}
-.summary {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.section-heading {
-  font-size: 13pt;
+.edu-level {
+  color: #c00000;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 18px 0 6px;
-  color: #000;
+  font-size: 12pt;
 }
-.section-divider {
-  border-bottom: 1px solid #000;
-  margin: 18px 0 8px;
-}
-.contact-line {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 10px;
-  text-align: center;
-}
-@media (max-width: 600px) {
 
+.edu-detail,
+.edu-meta {
+  color: #000;
+  font-weight: normal;
+  font-size: 11pt;
+}
+
+/* =========================
+   Download button
+   ========================= */
+
+.pdf-button-wrapper {
+  text-align: center;
+  margin: 28px 0 12px;
+}
+
+.download-btn {
+  display: inline-block;
+  min-width: 220px;
+  padding: 12px 26px;
+  font-family: Bahnschrift, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #8b0000;
+  background-color: #d1d5db;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #9ca3af;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              transform 0.1s ease;
+}
+
+.download-btn:hover {
+  background-color: #e5e7eb;
+  color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Mobile adjustments
+   ========================= */
+
+@media (max-width: 600px) {
   body {
-    margin: 20px auto;
-    padding: 0 12px;
+    padding: 20px 12px;
   }
 
   h1 {
@@ -269,8 +195,7 @@ a[href^="https://www.linkedin.com"]:after {
   .summary {
     font-size: 11pt;
   }
-}
-@media (max-width: 600px) {
+
   ul {
     padding-left: 18px;
   }
@@ -279,18 +204,31 @@ a[href^="https://www.linkedin.com"]:after {
     margin-bottom: 4px;
   }
 }
-.download-btn {
-  min-width: 220px;
-  text-align: center;
-}
-body {
-  background-color: #f3f4f6; /* light gray */
-}
-.WordSection1 {
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 6px;
-}
-.WordSection1 {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+
+/* =========================
+   Print-optimized
+   ========================= */
+
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    font-size: 11pt;
+  }
+
+  .WordSection1 {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  h1, h2, h3 {
+    color: #000 !important;
+    page-break-a
