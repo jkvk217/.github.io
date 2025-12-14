@@ -308,10 +308,13 @@ h3.job-title {
     grid-template-columns: 1fr;
   }
 
-  .education-divider {
-    display: none;
-  }
+ .education-divider {
+  width: 1px;
+  background-color: #999;
+  margin: 0 18px;          /* space left & right of divider */
+  align-self: stretch;    /* full height of content */
 }
+
 
 /* Kill default UL spacing under job-meta */
 .job-meta + ul {
