@@ -86,7 +86,7 @@ main {
 
 .section-divider {
   border-bottom: 1px solid #000;
-  margin: 2px 0 6px;
+  margin: 0px 0 6px;
 }
 
 section {
@@ -131,7 +131,7 @@ h3.job-title {
 /* Company + location + dates */
 .job-meta {
   margin-top: 0;
-  margin-bottom: 4px;     /* tight spacing before roles/bullets */
+  /*margin-bottom: 4px;     /* tight spacing before roles/bullets */
   line-height: 1.15;
   margin-bottom: 0;       /* critical: removes gap under title */
 }
