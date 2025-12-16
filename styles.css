@@ -423,3 +423,56 @@ h3.job-title {
     margin: 0.75in;
   }
 }
+/* =========================
+   DARK MODE OVERRIDES
+   ========================= */
+
+body.dark-mode {
+  background-color: #0b0f1a;
+  color: #e5e7eb;
+}
+
+body.dark-mode main {
+  background-color: #020617;
+  box-shadow: none;
+}
+
+/* Section headings & dividers */
+body.dark-mode .section-heading,
+body.dark-mode h1,
+body.dark-mode h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode .section-divider,
+body.dark-mode .subtle-divider {
+  border-color: #9ca3af;
+}
+
+/* Education section FIX */
+body.dark-mode .education-title {
+  color: #f9fafb;
+}
+
+body.dark-mode .edu-meta {
+  color: #d1d5db;
+}
+
+/* Degree accent stays red but softened */
+body.dark-mode .edu-degree {
+  color: #f87171;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #93c5fd;
+}
+
+/* Buttons */
+body.dark-mode .download-btn {
+  background-color: #1f2933;
+  border-color: #374151;
+  color: #fca5a5;
+}
+
+body.dark-mode .download-btn:hover {
