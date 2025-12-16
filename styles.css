@@ -35,10 +35,10 @@ main {
   text-align: center;
   font-size: 18pt;
   font-family: Bahnschrift, Arial, sans-serif;
-  font-weight: 800;      /* bolder */
-  font-style: italic;    /* italicized */
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.5px;   /* tightened */
   margin: 0 0 6px 0;
-  letter-spacing: 1.5px;
 }
 
 .contact-line {
