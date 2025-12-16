@@ -117,6 +117,7 @@ section {
 
 /* Job titles */
 h3.job-title {
+   margin: 2px 0 4px 0;
   font-size: 12pt;
   line-height: 1.1;
   margin-top: 8px;
@@ -127,6 +128,7 @@ h3.job-title {
 
 /* Company + location + dates */
 .job-meta {
+   margin: 2px 0 4px 0;
   margin-top: 0;
   margin-bottom: 4px;     /* tight spacing before roles/bullets */
   line-height: 1.15;
