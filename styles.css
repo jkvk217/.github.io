@@ -117,7 +117,10 @@ h3.job-title,
   line-height: 1.1;
   margin-bottom: 2px;
 }
-
+h3.job-title {
+  margin-top: 10px;
+  font-style: italic;
+}
 .education-title .edu-degree {
   color: #c00000;
   font-weight: 700;
@@ -150,6 +153,10 @@ ul {
 .job-meta .details,
 .job-meta .via {
   font-weight: 400;
+}
+ul {
+  margin: 4px 0 8px 0;
+  padding-left: 20px;
 }
 
 /* Role list (dashed, indented, italic) */
