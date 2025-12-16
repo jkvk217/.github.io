@@ -131,7 +131,7 @@ h3.job-title {
 /* Company + location + dates */
 .job-meta {
   margin-top: 0;
-  margin-bottom: 2px;   /* ↓ reduced spacing (was default ~1em) */
+  margin-bottom: 1px;   /* ↓ reduced spacing (was default ~1em) */
   line-height: 1.15;    /* keeps it readable but compact */
 }
 
@@ -194,16 +194,16 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
-
+/*
 .job-meta .company {
   font-weight: 700;
   margin-bottom: 0;       /* critical: removes gap under title */
 }
-
+/*
 .job-meta .details,
 .job-meta .via {
   font-weight: 400;
-  margin-bottom: 0;       /* critical: removes gap under title */
+  margin-bottom: 1;       /* critical: removes gap under title */
 }
 
 /* Role list (dashed, indented, italic) */
