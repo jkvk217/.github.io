@@ -215,7 +215,7 @@
 </div>
 <div class="pdf-button-wrapper">
   <div class="action-buttons">
-    <a class="download-btn" href="#">View PDF</a>
+    <a class="download-btn" href="jack_vink_cv.pdf">View PDF</a>
     <button class="theme-toggle">Dark Mode</button>
   </div>
 </div>
@@ -227,16 +227,6 @@
     document.body.classList.toggle('dark-mode');
   });
 </script>
-<script>
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const downloadBtn = document.querySelector('.download-btn');
-
-  if (isMobile && downloadBtn) {
-    downloadBtn.textContent = 'Open PDF';
-    downloadBtn.removeAttribute('download');
-  }
-</script>
-</body>
 
 
   </body>
