@@ -57,7 +57,13 @@ main {
 .contact-line a:hover {
   text-decoration: underline;
 }
+.contact-line a.accent-link {
+  color: #1d4ed8; /* professional blue */
+}
 
+.contact-line a.accent-link:hover {
+  text-decoration: underline;
+}
 /* =========================
    SECTION HEADINGS
    ========================= */
