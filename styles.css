@@ -166,6 +166,13 @@ ul {
 .edu-meta + .edu-meta {
   margin-top: 6px;
 }
+.education-item {
+  margin-top: 6px;
+}
+
+.education-item:first-child {
+  margin-top: 0;
+}
 
 /* Roles list (no bullets, indented, small) */
 ul.roles {
