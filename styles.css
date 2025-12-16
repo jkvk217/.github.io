@@ -229,13 +229,14 @@ ul.roles li::before {
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   margin-top: 10px;
-  align-items: start; /* ← THIS fixes the misalignment */
+  align-items: start;
 }
-
 
 .education-item {
   line-height: 1.35;
+  align-self: start; /* 🔑 forces top alignment */
 }
+
 
 /* Stack on mobile */
 @media (max-width: 600px) {
