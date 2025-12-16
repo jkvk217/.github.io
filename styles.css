@@ -130,6 +130,7 @@ h3.job-title {
   margin-top: 0;
   margin-bottom: 4px;     /* tight spacing before roles/bullets */
   line-height: 1.15;
+  margin-bottom: 0;       /* critical: removes gap under title */
 }
 
 /* Roles list (italic, no bullets, indented) */
@@ -251,7 +252,7 @@ ul.roles li {
   display: flex;
   text-align: center;
   align-items: flex-start;
-  gap: 24px;
+  gap: 12px;
   margin-top: 10px;
 }
 
