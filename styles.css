@@ -230,15 +230,17 @@ ul.roles li::before {
    ========================= */
 
 .education-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
   margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .education-item {
-  line-height: 1.35;
+  flex: 1;
+}
+.education-item .education-title {
+  margin: 0 0 2px 0;
 }
 
 /* CRITICAL: normalize column start */
