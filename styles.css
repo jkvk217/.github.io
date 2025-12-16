@@ -113,21 +113,31 @@ section {
 /* Job titles (shared with Education levels) */
 h3.job-title,
 .education-title {
-  color: #c00000;
   font-size: 12pt;
-  font-weight: 700;
   line-height: 1.1;
-  margin: 0 0 2px 0;
+  margin-bottom: 2px;
 }
 
-h3.job-title {
+.education-title .edu-degree {
+  color: #c00000;
+  font-weight: 700;
   font-style: italic;
 }
 
-.job-meta {
+.education-title .edu-program {
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.edu-meta {
   font-size: 11pt;
-  line-height: 1.1;   /* tighter line spacing */
-  margin: 1px 0 2px 0;
+  font-style: italic;
+  line-height: 1.15;
+  margin: 0;
+  color: #000;
+}
+
 }
 ul {
   margin-top: 2px;
