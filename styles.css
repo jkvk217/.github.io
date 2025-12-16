@@ -159,7 +159,10 @@ h3.job-title {
 ul {
   margin-top: 2px;
 }
-
+ul {
+  margin: 4px 0 8px 0;
+  padding-left: 38px; /* shifts bullets ~¼ inch to the right */
+}
 /* Roles list (no bullets, indented, small) */
 ul.roles {
   list-style: none;
