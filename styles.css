@@ -131,10 +131,10 @@ h3.job-title {
 /* Company + location + dates */
 .job-meta {
   margin-top: 0;
-  /*margin-bottom: 4px;     /* tight spacing before roles/bullets */
-  line-height: 1.15;
-  margin-bottom: 0;       /* critical: removes gap under title */
+  margin-bottom: 2px;   /* ↓ reduced spacing (was default ~1em) */
+  line-height: 1.15;    /* keeps it readable but compact */
 }
+
 
 /* Roles list (italic, no bullets, indented) */
 ul.roles {
