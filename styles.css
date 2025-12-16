@@ -476,3 +476,20 @@ body.dark-mode .download-btn {
 }
 
 body.dark-mode .download-btn:hover {
+
+/* =========================
+   DARK MODE: CONTACT LINE
+   ========================= */
+
+body.dark-mode .contact-line,
+body.dark-mode .contact-line span,
+body.dark-mode .contact-line a,
+body.dark-mode .contact-line a:visited {
+  color: #f9fafb; /* soft white */
+}
+
+/* Optional: keep hover subtle instead of blue */
+body.dark-mode .contact-line a:hover {
+  color: #e5e7eb;
+  text-decoration: underline;
+}
