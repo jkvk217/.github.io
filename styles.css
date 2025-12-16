@@ -318,6 +318,51 @@ ul.roles li {
 }
 
 /* =========================
+   DARK MODE
+   ========================= */
+
+body.dark-mode {
+  background-color: #111827; /* slate-900 */
+  color: #e5e7eb;            /* gray-200 */
+}
+
+body.dark-mode main {
+  background-color: #020617; /* near-black */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .section-heading,
+body.dark-mode .section-divider {
+  color: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+body.dark-mode h3.job-title,
+body.dark-mode .edu-degree {
+  color: #f87171; /* soft red */
+}
+
+body.dark-mode a {
+  color: #93c5fd;
+}
+
+body.dark-mode a:hover {
+  color: #bfdbfe;
+}
+
+/* Buttons (same shape, dark palette) */
+body.dark-mode .download-btn {
+  background-color: #1f2933;
+  border-color: #374151;
+  color: #fca5a5;
+}
+
+body.dark-mode .download-btn:hover {
+  background-color: #374151;
+  color: #fecaca;
+}
+
+/* =========================
    PRINT (LOCKED)
    ========================= */
 
