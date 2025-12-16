@@ -148,6 +148,12 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
+ul.roles {
+  list-style: none;
+  padding-left: 18px; /* ~¼ inch */
+  margin: 2px 0 0 0;
+}
+
 /*
 ul.roles li::before {
   content: "–";
