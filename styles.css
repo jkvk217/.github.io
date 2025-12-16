@@ -155,14 +155,12 @@ h3.job-title {
   margin: 0;
   color: #000;
 }
-
-ul {
-  margin-top: 2px;
-}
+/* Default bullet lists (job bullets) */
 ul {
   margin: 4px 0 8px 0;
-  padding-left: 38px; /* shifts bullets ~¼ inch to the right */
+  padding-left: 38px; /* ~¼ inch indent */
 }
+
 /* Roles list (no bullets, indented, small) */
 ul.roles {
   list-style: none;
@@ -177,9 +175,6 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
-ul {
-  margin-top: 2px;
-}
 
 .job-meta .company {
   font-weight: 700;
