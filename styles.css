@@ -118,27 +118,40 @@ section {
    WORK EXPERIENCE
    ========================= */
 
+/* =========================
+   WORK EXPERIENCE SPACING
+   ========================= */
+
 /* Job titles */
 h3.job-title {
   font-size: 12pt;
   line-height: 1.1;
   margin-top: 8px;
-  margin-bottom: 0;       /* critical: removes gap under title */
+  margin-bottom: 0;          /* removes gap under title */
   font-style: italic;
   color: #c00000;
 }
 
 /* Company + location + dates */
 .job-meta {
-  margin: 0 0 2px 0 !important; /* hard reset */
+  margin: 0;                 /* hard reset */
   line-height: 1.15;
 }
 
+/* Bullet lists immediately after company/date */
+.job-meta + ul {
+  margin-top: 2px;           /* THIS kills the collapsing gap */
+}
+
+/* Roles list immediately after company/date */
+.job-meta + ul.roles {
+  margin-top: 2px;
+}
 
 /* Roles list (italic, no bullets, indented) */
 ul.roles {
   list-style: none;
-  padding-left: 50px;     /* ~¼ inch */
+  padding-left: 50px;        /* ~¼ inch */
   margin: 2px 0 4px 0;
 }
 
