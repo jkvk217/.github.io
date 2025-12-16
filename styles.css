@@ -188,7 +188,7 @@ h3.job-title {
 /* Roles list (no bullets, indented, small) */
 ul.roles {
   list-style: none;
-  padding-left: 18px;
+  padding-left: 39px;
   margin: 2px 0 0 0;
 }
 
