@@ -111,46 +111,31 @@ section {
    ========================= */
 
 /* Job titles (shared with Education levels) */
-h3.job-title,
-.education-title {
+/* =========================
+   WORK EXPERIENCE
+   ========================= */
+
+/* Job titles */
+h3.job-title {
   font-size: 12pt;
   line-height: 1.1;
-  margin-bottom: 2px;
-}
-
-h3.job-title {
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 0;       /* critical: removes gap under title */
   font-style: italic;
   color: #c00000;
 }
-/* TIGHTEN JOB HEADER SPACING */
-h3.job-title {
-  margin-top: 8px;     /* was 10px+ */
-  margin-bottom: 0;   /* key fix */
-}
 
-.job-meta {
-  margin-top: 0;      /* remove default gap */
-  margin-bottom: 4px;
-  line-height: 1.15;
-}
-
-.education-title .edu-degree {
-  color: #c00000;
-  font-weight: 700;
-  font-style: italic;
-}
-/* Tighten spacing under company name */
+/* Company + location + dates */
 .job-meta {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 4px;     /* tight spacing before roles/bullets */
   line-height: 1.15;
 }
 
 /* Roles list (italic, no bullets, indented) */
 ul.roles {
   list-style: none;
-  padding-left: 36px; /* ~¼ inch */
+  padding-left: 36px;     /* ~¼ inch */
   margin: 2px 0 4px 0;
 }
 
