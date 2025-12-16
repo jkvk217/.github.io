@@ -134,6 +134,12 @@ h3.job-title {
   margin-bottom: 4px;
   line-height: 1.15;
 }
+
+.education-title .edu-degree {
+  color: #c00000;
+  font-weight: 700;
+  font-style: italic;
+}
 /* Education title formatting 
 .education-title .edu-degree {
   color: #c00000;
@@ -217,13 +223,6 @@ ul.roles {
   padding-left: 18px; /* ~¼ inch */
   margin: 2px 0 0 0;
 }
-
-/*
-ul.roles li::before {
-  content: "–";
-  margin-right: 6px;
-}
-*/
 
 /* =========================
    EDUCATION
