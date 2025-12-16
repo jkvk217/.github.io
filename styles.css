@@ -302,7 +302,9 @@ ul.achievements li {
     color: #000 !important;
     text-decoration: none;
   }
-
+.section {
+  margin-bottom: 2rem;
+}
   .pdf-button-wrapper {
     display: none !important;
   }
