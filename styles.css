@@ -335,28 +335,6 @@ ul.roles li {
   }
 }
 
-/* Theme toggle button (if not already styled) */
-.theme-toggle {
-  min-width: 125px;
-  padding: 12px 26px;
-  font-family: Bahnschrift, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.75px;
-  color: #8b0000;
-  background-color: #d1d5db;
-  border-radius: 6px;
-  border: 1px solid #9ca3af;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.theme-toggle:hover {
-  background-color: #e5e7eb;
-  color: #b91c1c;
-}
-
-
 /* =========================
    MOBILE
    ========================= */
