@@ -247,12 +247,11 @@ ul.roles li {
    EDUCATION
    ========================= */
 
-.education-grid {   
-     margin-right: 12; 
+.education-grid {
   display: flex;
   text-align: center;
   align-items: flex-start;
-  gap: 12px;
+  gap: 0px;
   margin-top: 10px;
 }
 
