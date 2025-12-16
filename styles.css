@@ -251,17 +251,20 @@ ul.roles li {
 }
 
 .education-item {
+   text-align: center;
   flex: 1;
   line-height: 1.35;
 }
 
 /* Titles align perfectly */
 .education-title {
+   text-align: center;
   margin: 0 0 2px 0;
 }
 
 /* Meta text */
 .edu-meta {
+   text-align: center;
   font-size: 11pt;
   color: #000;
   margin: 0;
