@@ -140,10 +140,12 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
+/*
 ul.roles li::before {
   content: "–";
   margin-right: 6px;
 }
+*/
 
 /* =========================
    EDUCATION
