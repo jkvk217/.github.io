@@ -244,6 +244,7 @@ ul.roles li {
 
 .education-grid {
   display: flex;
+  text-align: center;
   align-items: flex-start;
   gap: 24px;
   margin-top: 10px;
