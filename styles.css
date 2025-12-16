@@ -123,7 +123,17 @@ h3.job-title {
   font-style: italic;
   color: #c00000;
 }
+/* TIGHTEN JOB HEADER SPACING */
+h3.job-title {
+  margin-top: 8px;     /* was 10px+ */
+  margin-bottom: 0;   /* key fix */
+}
 
+.job-meta {
+  margin-top: 0;      /* remove default gap */
+  margin-bottom: 4px;
+  line-height: 1.15;
+}
 /* Education title formatting */
 .education-title .edu-degree {
   color: #c00000;
