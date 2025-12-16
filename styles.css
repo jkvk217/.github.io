@@ -238,10 +238,16 @@ ul.roles li::before {
 }
 
 .education-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   line-height: 1.35;
+}
+
+/* CRITICAL: normalize column start */
+.education-item > *:first-child {
+  margin-top: 0 !important;
+}
+
+.education-title {
+  margin-top: 0;
 }
 
 /* Stack on mobile */
