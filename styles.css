@@ -160,6 +160,9 @@ ul {
   margin: 4px 0 8px 0;
   padding-left: 38px; /* ~¼ inch indent */
 }
+.edu-school {
+  font-style: normal;
+}
 
 /* Roles list (no bullets, indented, small) */
 ul.roles {
