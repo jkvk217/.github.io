@@ -226,11 +226,23 @@ ul.roles li::before {
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  column-gap: 24px;
-  align-items: start;
-  margin-top: 12px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px; /* even spacing */
+  margin-top: 10px;
 }
+
+.education-item {
+  line-height: 1.35;
+}
+
+/* Stack on mobile */
+@media (max-width: 600px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+}
+
 
 .education-divider {
   width: 1px;
