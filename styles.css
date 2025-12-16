@@ -188,10 +188,9 @@ h3.job-title {
 /* Roles list (no bullets, indented, small) */
 ul.roles {
   list-style: none;
-  padding-left: 39px;
+  padding-left: 36px; /* ~¼ inch */
   margin: 2px 0 0 0;
 }
-
 ul.roles li {
   font-style: italic;
   font-size: 10pt;
@@ -218,11 +217,7 @@ ul.roles li {
   margin-bottom: 2px;
 }
 
-ul.roles {
-  list-style: none;
-  padding-left: 18px; /* ~¼ inch */
-  margin: 2px 0 0 0;
-}
+
 
 /* =========================
    EDUCATION
