@@ -242,28 +242,32 @@
 <script>
   const shareBtn = document.getElementById('shareBtn');
 
-  if (navigator.share) {
+  if (shareBtn) {
     shareBtn.addEventListener('click', async () => {
-      try {
-        await navigator.share({
-          title: 'Jack Vink – Resume',
-          text: 'View or download my resume',
-          url: 'https://jkvk217.github.io/Jack_Vink_CV.pdf'
-        });
-      } catch (err) {
-        // user canceled — do nothing
+      const shareData = {
+        title: 'Jack Vink – Resume',
+        text: 'View or download my resume',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          // user canceled — do nothing
+        }
+      } else {
+        // Fallback: copy link
+        navigator.clipboard.writeText(shareData.url);
+        shareBtn.textContent = 'Link Copied';
+        setTimeout(() => {
+          shareBtn.textContent = 'Share';
+        }, 1500);
       }
-    });
-  } else {
-    // Fallback: copy link
-    shareBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText(
-        'https://jkvk217.github.io/Jack_Vink_CV.pdf'
-      );
-      alert('Link copied to clipboard');
     });
   }
 </script>
+
 
 
   </body>
