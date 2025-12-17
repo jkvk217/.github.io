@@ -211,17 +211,23 @@
   </div>
 </section>
 
-</div>
 <div class="pdf-button-wrapper">
-<div class="action-buttons">
-  <a class="download-btn" href="Jack_Vink_CV.pdf" download>Download PDF</a>
-  <a class="download-btn" href="Jack_Vink_CV.pdf">View PDF</a>
-  <button class="theme-toggle">Dark Mode</button>
-  <button class="download-btn share-btn" id="shareBtn">Share</button>
+  <div class="action-buttons">
+    <a class="download-btn" href="Jack_Vink_CV.pdf" download>Download PDF</a>
+    <a class="download-btn" href="Jack_Vink_CV.pdf">View PDF</a>
+    <button
+      class="download-btn theme-toggle"
+      type="button"
+      aria-pressed="false"
+      aria-label="Toggle dark mode">Dark Mode</button>
+    <button
+      class="download-btn share-btn"
+      type="button"
+      aria-label="Share">
+      Share
+    </button>
+  </div>
 </div>
-
-</div>
-
 
 <script>
   const toggleBtn = document.querySelector('.theme-toggle');
