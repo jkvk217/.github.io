@@ -13,7 +13,18 @@ body {
   background-color: #f3f4f6;
   color: #000;
 }
+/* =========================
+   TOP BUTTONS (HEADER)
+   ========================= */
 
+.resume-header {
+  padding-top: 0;       /* kills inherited breathing room */
+}
+
+.pdf-button-wrapper.top-buttons {
+  margin-top: 0;        /* removes extra space above */
+  margin-bottom: 10px; /* keeps breathing room below */
+}
  
 /* =========================
    RESUME CARD (SCREEN)
