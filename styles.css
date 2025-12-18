@@ -91,7 +91,7 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   font-style: italic;
-  line-height: .95;        /* 🔑 THIS is the fix */
+  line-height: .5;        /* 🔑 THIS is the fix */
   margin: 16px 0 0;
   color: #000;
 }
