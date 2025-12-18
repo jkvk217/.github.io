@@ -17,6 +17,7 @@ body {
    TOP BUTTONS (HEADER)
    ========================= */
 
+
 .resume-header {
   padding-top: 0;       /* kills inherited breathing room */
 }
@@ -180,7 +181,6 @@ ul.job-bullets {
 
 /** Education title formatting */
   .edu-degree {
-  color: #c00000;
   font-weight: 700;
   font-style: italic;
 }
