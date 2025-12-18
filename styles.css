@@ -126,11 +126,6 @@ section {
    WORK EXPERIENCE
    ========================= */
 
-/* Job titles (shared with Education levels) */
-/* =========================
-   WORK EXPERIENCE
-   ========================= */
-
 /* =========================
    WORK EXPERIENCE SPACING
    ========================= */
@@ -539,7 +534,7 @@ body.dark-mode .edu-meta {
 
 /* Degree accent stays red but softened */
 body.dark-mode .edu-degree {
-  color: #f87171;
+/*  color: #f87171;
 }
 
 /* Links */
